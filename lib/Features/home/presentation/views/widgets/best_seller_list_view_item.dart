@@ -1,9 +1,8 @@
-
+import 'package:bookly/Features/home/presentation/views/widgets/book_rating.dart';
 import 'package:bookly/constant.dart';
 import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/material.dart';
-
 class BestSellerListViewItem extends StatelessWidget {
   const BestSellerListViewItem({super.key});
 
@@ -15,7 +14,7 @@ class BestSellerListViewItem extends StatelessWidget {
         AspectRatio(
           aspectRatio: 3 / 4,
           child: Container(
-            height: MediaQuery.of(context).size.height * .25,
+            height: MediaQuery.of(context).size.height * .26,
             width: 100,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
@@ -26,32 +25,34 @@ class BestSellerListViewItem extends StatelessWidget {
             ),
           ),
         ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-          SizedBox(
-              width: MediaQuery.of(context).size.width * .5,
-              child: Text(
-                'Herry Potter and the Global of Fire',
-                maxLines: 2,
-                style: Styles.textStyle20.copyWith(fontFamily: kGtSectraFine ),
-              )),
-              const SizedBox(height: 2),
-              const Text(
-                'J.K. Rowling',
-                style: Styles.textStyle14,
-              ),
-             
-              Row(
-                children: [
-                  Text('19.99\$',
+        Expanded(
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            SizedBox(
+                width: MediaQuery.of(context).size.width * .6,
+                child: Text(
+                  'Herry Potter and the Global of Fire   ',
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: Styles.textStyle20.copyWith(fontFamily: kGtSectraFine),
+                )),
+            const SizedBox(height: 3),
+            const Text(
+              'J.K. Rowling',
+              style: Styles.textStyle14,
+            ),
+            Row(
+              children: [
+                Text(
+                  '19.99\$',
                   style: Styles.textStyle14,
-                  )
-
-                ],
-              )
-
-        ]),
+                ),
+                Spacer(),
+                BookRating(),
+              ],
+            )
+          ]),
+        ),
       ]),
     );
   }
