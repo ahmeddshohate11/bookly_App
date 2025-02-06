@@ -57,7 +57,9 @@ class BestSellerListViewItem extends StatelessWidget {
                     style: Styles.textStyle14,
                   ),
                   Spacer(),
-                  BookRating(),
+                  BookRating(
+                    
+                  ),
                 ],
               )
             ]),
