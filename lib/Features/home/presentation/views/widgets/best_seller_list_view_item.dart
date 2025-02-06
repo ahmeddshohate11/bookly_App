@@ -4,7 +4,7 @@ import 'package:bookly/core/utils/app_router.dart';
 import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 import 'package:go_router/go_router.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
