@@ -1,4 +1,3 @@
-
 import 'package:bookly/Features/home/presentation/views/widgets/custome_book_item.dart';
 import 'package:flutter/material.dart';
 
@@ -15,11 +14,8 @@ class SimilarBooksListView extends StatelessWidget {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 5),
               child: CustomeBookImage(),
-              
             );
           }),
-    )  ;
+    );
   }
 }
-
-

@@ -22,16 +22,13 @@ class _SplashViewbodyState extends State<SplashViewbody>
   void initState() {
     super.initState();
     initSlidingAnimation();
-      navigateToHome(); 
+    navigateToHome();
   }
-
- 
 
   @override
   void dispose() {
-   
     super.dispose();
-     animationController.dispose();
+    animationController.dispose();
   }
 
   @override
@@ -57,11 +54,12 @@ class _SplashViewbodyState extends State<SplashViewbody>
     // Start the animation
     animationController.forward();
   }
-   void navigateToHome() {
-      Future.delayed( const Duration(seconds: 2), () {
-    //  Get.to(() => const HomeView(),transition: Transition.fade,
-    //  duration: kTransitionDuration);
-   GoRouter.of(context).push(AppRouter.kHomeView);
-       }); 
+
+  void navigateToHome() {
+    Future.delayed(const Duration(seconds: 2), () {
+      //  Get.to(() => const HomeView(),transition: Transition.fade,
+      //  duration: kTransitionDuration);
+      GoRouter.of(context).push(AppRouter.kHomeView);
+    });
   }
 }

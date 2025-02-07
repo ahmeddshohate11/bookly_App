@@ -9,42 +9,42 @@ class BookDetailsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        var width = MediaQuery.of(context).size.width;
-    return  Column(
-        children: [
-           Padding(
-                padding: EdgeInsets.symmetric(horizontal: width * .2),
-                child: CustomeBookImage()),
-            const SizedBox(
-              height: 20,
+    var width = MediaQuery.of(context).size.width;
+    return Column(
+      children: [
+        Padding(
+            padding: EdgeInsets.symmetric(horizontal: width * .2),
+            child: CustomeBookImage()),
+        const SizedBox(
+          height: 20,
+        ),
+        Text(
+          'The Jungle Book ',
+          style: Styles.textStyle30.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(
+          height: 7,
+        ),
+        Opacity(
+          opacity: .7,
+          child: Text(
+            'Rudyard Kipling',
+            style: Styles.textStyle18.copyWith(
+              fontStyle: FontStyle.italic,
+              fontWeight: FontWeight.w500,
             ),
-            Text(
-              'The Jungle Book ',
-              style: Styles.textStyle30.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(
-              height: 7,
-            ),
-            Opacity(
-              opacity: .7,
-              child: Text(
-                'Rudyard Kipling',
-                style: Styles.textStyle18.copyWith(
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ),
-            BookRating(
-              mainAxisAlignment: MainAxisAlignment.center,
-            ),
-            const SizedBox(
-              height: 30,
-            ),
-            BooksAction(),
-        ],
+          ),
+        ),
+        BookRating(
+          mainAxisAlignment: MainAxisAlignment.center,
+        ),
+        const SizedBox(
+          height: 30,
+        ),
+        BooksAction(),
+      ],
     );
   }
 }

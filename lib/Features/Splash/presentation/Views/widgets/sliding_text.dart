@@ -16,13 +16,11 @@ class SlidingText extends StatelessWidget {
         return SlideTransition(
           position: slidingAnimation,
           child: Text(
-        'Read Free Books',
-        textAlign: TextAlign.center,
-      ),
-      
+            'Read Free Books',
+            textAlign: TextAlign.center,
+          ),
         );
       },
-           
-      );
+    );
   }
 }

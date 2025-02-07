@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 
 import 'package:go_router/go_router.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({super.key});
+class BookListViewItem extends StatelessWidget {
+  const BookListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -57,9 +57,7 @@ class BestSellerListViewItem extends StatelessWidget {
                     style: Styles.textStyle14,
                   ),
                   Spacer(),
-                  BookRating(
-                    
-                  ),
+                  BookRating(),
                 ],
               )
             ]),

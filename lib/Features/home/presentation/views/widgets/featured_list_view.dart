@@ -14,7 +14,6 @@ class FeaturedBooksdListView extends StatelessWidget {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: CustomeBookImage(),
-              
             );
           }),
     );
