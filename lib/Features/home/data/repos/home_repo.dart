@@ -1,1 +1,4 @@
-abstract class
+abstract class HomeRepo {
+ fetchBestSellerBooks();
+ fetchFeaturedBooks();
+ }
