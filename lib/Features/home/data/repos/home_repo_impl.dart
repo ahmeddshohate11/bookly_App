@@ -42,7 +42,7 @@ class HomeRepoImpl extends HomeRepo {
     } on DioException catch (e) {
       return left(ServerFailure.fromDioError(e));
     } catch (e) {
-      return left(ServerFailure('Unexpected error occurred'));
+      return left(ServerFailure(e.toString()));
     }
   }
 }
